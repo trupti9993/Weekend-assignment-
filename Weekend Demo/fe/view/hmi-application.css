@@ -1,0 +1,1619 @@
+/*
+ * ==================================================================
+ *
+ * (C) Copyright 2019 Sydac Pty Ltd., all rights reserved. This is unpublished
+ * proprietary source code of Sydac. The copyright notice above does not
+ * evidence any actual or intended publication of such source code.
+ *
+ * ==================================================================
+ */
+
+/** CSS styles for all the components is given here **/
+.root {
+	/** Can assign variable to common styles and use same for other components. **/
+	-fx-background-color: rgb(192.0, 192.0, 192.0);
+}
+
+/** Gray Color used in various state **/
+* {
+	-fx-light-gray-color: rgb(192.0, 192.0, 192.0);
+}
+
+/** Dark Gray Color used in various state **/
+* {
+	-fx-gray-color: rgb(190.0, 193.0, 205.0);
+}
+
+/** Black Color used in various state **/
+* {
+	-fx-black-color: rgb(0.0, 0.0, 0.0);
+}
+
+/** green Color used in various state **/
+* {
+	-fx-green-color: rgb(0.0, 255.0, 0.0);
+}
+
+/** green Color used in various state **/
+* {
+	-fx-dark-green-color: rgb(76.0, 158.0, 60.0);
+}
+
+/** Yellow Color used in various state **/
+* {
+	-fx-yellow-color: rgb(255.0, 255.0, 0.0);
+}
+
+/** red Color used in various state **/
+* {
+	-fx-red-color: rgb(255.0, 0.0, 0.0);
+}
+
+/** white Color used in various state **/
+* {
+	-fx-white-color: rgb(255.0, 255.0, 255.0);
+}
+
+/** dark gray Color used in various state **/
+* {
+	-fx-dark-gray-color: rgb(119.0, 136.0, 153.0);
+}
+
+/** Blue Color used in various state **/
+* {
+	-fx-blue-color: rgb(0.0, 122.0, 255.0);
+}
+
+/** Bypass Normal state **/
+* {
+	-fx-bypass-normal-color: rgb(0.0, 0.0, 0.0);
+}
+
+/** Light blue color**/
+* {
+	-fx-light-blue-color: rgb(110.0, 157.0, 191.0);
+}
+
+* {
+	-fx-train-view-color: rgb(73.0, 127.0, 165.0);
+}
+
+.header-panel {
+	-fx-background-color: -fx-light-gray-color;
+}
+
+.header-panel-blue-bg-label {
+	-fx-background-color: -fx-light-blue-color;
+	-fx-border-color: -fx-light-gray-color;
+	-fx-border-width: 1.0px;
+	-fx-text-fill: black;
+	-fx-font-size: 17.0px;
+	-fx-font-family: "Calibri";
+}
+
+.car-door-label {
+	-fx-text-fill: black;
+	-fx-font-size: 13.5px;
+	-fx-font-family: "Calibri";
+	-fx-alignment: center;
+	-fx-background-position: center;
+}
+
+.car-panel-label {
+	-fx-text-fill: black;
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Calibri";
+	-fx-alignment: center;
+	-fx-background-position: center;
+}
+
+.car-panel-label-numbers {
+	-fx-text-fill: black;
+	-fx-font-size: 15.0px;
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-color: white;
+}
+
+.header-panel-title-label {
+	-fx-text-fill: black;
+	-fx-font-size: 17.0px;
+	-fx-font-family: "Calibri";
+}
+
+.header-panel-commLost-label {
+	-fx-background-color: -fx-red-color;
+	-fx-border-color: -fx-black-color;
+	-fx-border-width: 1.0px;
+	-fx-text-fill: black;
+	-fx-font-size: 17.0px;
+	-fx-font-family: "Calibri";
+}
+
+.driver-cab-active {
+	-fx-background-color: rgb(1.0, 130.0, 199.0);
+}
+
+.driver-cab-inactive {
+	-fx-background-color: rgb(134.0, 175.0, 202.0);
+}
+
+.cab-direction, .cab-direction:no_direction {
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.cab-direction:forward {
+	-fx-background-image: url('../images/driver_cab_direction_forward.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.cab-direction:backward {
+	-fx-background-image: url('../images/driver_cab_direction_reverse.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.button {
+	-fx-skin: "com.sydac.bjmmts.cabscreens.fe.app.button.ButtonSkin";
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-radius: 4.0px;
+	-fx-border-radius: 4.0px;
+	-fx-font-size: 17.0px;
+	-fx-font-family: "Calibri";
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-wrap-text: true;
+	-fx-text-alignment: center;
+	-fx-padding: 0.0;
+}
+
+.button.button-default, .button.button-default:unselected {
+	-fx-background-color: rgb(242.0, 239.0, 235.0);
+	-fx-border-width: 1.0px;
+	-fx-border-color: rgb(111.0, 111.0, 111.0);
+	-fx-text-fill: black;
+}
+
+.button.button-default:armed, .button.button-default:selected {
+	-fx-background-color: rgb(242.0, 239.0, 235.0);
+	-fx-border-width: 1.5px;
+	-fx-border-color: rgb(112.0, 170.0, 210.0);
+	-fx-text-fill: black;
+}
+
+.button.button-default:green_selected {
+	-fx-background-color: green;
+	-fx-border-width: 1.5px;
+	-fx-border-color: rgb(112.0, 170.0, 210.0);
+	-fx-text-fill: black;
+}
+
+.button.button-default:disabled {
+	-fx-background-color: rgb(242.0, 239.0, 235.0);
+	-fx-border-width: 1.0px;
+	-fx-border-color: rgb(111.0, 111.0, 111.0);
+	-fx-text-fill: black;
+}
+
+.cab-escape-door, .cab-escape-door:cab_escape_door_locked {
+	-fx-padding: 0.0 0.0 0.0 0.0;
+	-fx-alignment: center;
+	-fx-border-color: rgb(107.0, 114.0, 122.0);
+	-fx-border-width: 0.5px;
+	-fx-background-color: rgb(5.0, 177.0, 27.0);
+}
+
+.cab-escape-door:cab_escape_door_open {
+	-fx-background-color: rgb(255.0, 0.0, 0.0);
+}
+
+.cab-escape-door:cab_escape_door_unknown {
+	
+}
+
+.cab-rear-door, .cab-rear-door:cab_rear_door_locked {
+	-fx-alignment: center;
+	-fx-border-color: rgb(107.0, 114.0, 122.0);
+	-fx-border-width: 0.5px;
+	-fx-background-color: rgb(5.0, 177.0, 27.0);
+}
+
+.cab-rear-door:cab_rear_door_open {
+	-fx-background-color: rgb(255.0, 0.0, 0.0);
+}
+
+.cab-rear-door:cab_rear_door_unknown {
+	
+}
+
+/** CSS to specify colors for various states of car doors **/
+.train-door, cab-side-door, .train-door:closed, .cab-side-door:closed {
+	-fx-padding: 0.0 0.0 0.0 0.0;
+	-fx-alignment: center;
+	-fx-border-color: rgb(107.0, 114.0, 122.0) white white
+		rgb(107.0, 114.0, 122.0);
+	-fx-border-width: 1.0px 1.5px 1.5px 1.0px;
+	-fx-background-color: rgb(5.0, 177.0, 27.0);
+}
+
+.train-door:open, .cab-side-door:open {
+	-fx-background-color: rgb(255.0, 255.0, 0.0);
+}
+
+.train-door:faulty {
+	-fx-background-color: rgb(255.0, 0.0, 0.0);
+}
+
+.train-door:emergency_unlock, .cab-side-door:emergency_unlock {
+	-fx-background-color: white;
+}
+
+.train-door:close_and_isolate {
+	-fx-background-color: rgb(5.0, 177.0, 27.0);
+	-fx-background-image: url('../images/door_closed_isolated.png');
+	-fx-background-repeat: no-repeat;
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.train-door:open_and_isolated {
+	-fx-background-color: rgb(255.0, 255.0, 0.0);
+	-fx-background-image: url('../images/door_opened_isolated.png');
+	-fx-background-repeat: no-repeat;
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.acm-status, .acm-status:unknown {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/acm_stop.png');
+	-fx-background-size: 100.0%;
+	-fx-background-color: white;
+}
+
+.acm-status:fault {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/acm_faulty.png');
+	-fx-background-size: 100.0%;
+	-fx-background-color: white;
+}
+
+.acm-status:not_working {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/acm_isolated.png');
+	-fx-background-size: 100.0%;
+	-fx-background-color: white;
+}
+
+.acm-status:working {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/acm_operation.png');
+	-fx-background-color: white;
+}
+
+.acm-status:selected {
+	-fx-border-color: yellow;
+	-fx-border-width: 3.0;
+}
+
+.parking-brake, .parking-brake:unknown {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.parking-brake:applied {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/parking_brake_applied.png');
+	-fx-background-size: 100.0%;
+}
+
+.parking-brake:released {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/parking_brake_released.png');
+	-fx-background-size: 100.0%;
+}
+
+.parking-brake:failed_and_isolated {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/parking_brake_isolated.png');
+	-fx-background-size: 100.0%;
+}
+
+.start-up-screen-blue-background {
+	-fx-background-color: rgb(66.0, 93.0, 164.0);
+}
+
+.air-brake:unknown {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.air-brake, .air-brake:applied {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/air_brake_applied.png');
+	-fx-background-size: 100.0%;
+}
+
+.air-brake:released {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/air_brake_release.png');
+	-fx-background-size: 100.0%;
+}
+
+.air-brake:failed {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/air_brake_faulty.png');
+	-fx-background-size: 100.0%;
+}
+
+.air-brake:isolated {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/air_brake_isolated_cross.png');
+	-fx-background-size: 100.0%;
+}
+
+.air-brake:faulty_isolated {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/air_brake_faulty_and_isolated.png');
+	-fx-background-size: 100.0%;
+}
+
+
+.air-compressor, .air-compressor:standby {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/air_compressor_standby.png');
+	-fx-background-size: 100.0%;
+}
+
+.air-compressor:started {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/air_compressor_operation.png');
+	-fx-background-size: 100.0%;
+}
+
+.air-compressor:faulty {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/air_compressor_faulty.png');
+	-fx-background-size: 100.0%;
+}
+
+.mcm-status, .mcm-status:unknown {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/mcm_stop.png');
+	-fx-background-size: 100.0%;
+	-fx-background-color: white;
+}
+
+.mcm-status:fault {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/mcm_faulty.png');
+	-fx-background-size: 100.0%;
+	-fx-background-color: white;
+}
+
+.mcm-status:not_working {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/mcm_isolated.png');
+	-fx-background-size: 100.0%;
+	-fx-background-color: white;
+}
+
+.mcm-status:working {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/mcm_operation.png');
+	-fx-background-size: 100.0%;
+	-fx-background-color: white;
+}
+
+.panto-status:unknown {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.panto-status:down_faulty {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/pantograph_lowered_faulty.png');
+	-fx-background-size: 100.0%;
+}
+
+.panto-status:down {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/pantograph_lowered.png');
+	-fx-background-size: 100.0%;
+}
+
+.panto-status:raised_faulty {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/pantograph_raised_faulty.png');
+	-fx-background-size: 100.0%;
+}
+
+.panto-status, .panto-status:raised {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/pantograph_raised.png');
+	-fx-background-size: 100.0%;
+}
+
+.panto-status:not_to_raise {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/pantograph_do_not_raise.png');
+	-fx-background-size: 100.0%;
+}
+
+/**================================================================================================================== **/
+.login-keypad-input-label {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/login_keypad_input.png');
+	-fx-padding: 0.0;
+	-fx-insets: 0.0;
+	-fx-background-insets: 0.0;
+	-fx-background-size: 100.0%;
+}
+
+.button-numpad-default {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/numpad.png');
+	-fx-background-size: 66.0px 69.0px; 
+}
+
+.text-font-style {
+	-fx-font-family: Arial, Helvetica, sans-serif;
+	-fx-font-size: 18.0;
+}
+
+.train-view-panel {
+	-fx-background-color: -fx-light-gray-color;
+}
+
+.train-view-panel-blue-bg-button {
+	-fx-background-color: -fx-train-view-color;
+}
+
+.train-motion-direction-forword {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/driver_cab_direction_forward.png');
+	-fx-background-size: 80.0%;
+	-fx-background-alignment: left;
+}
+
+.train-motion-direction-reverse {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/driver_cab_direction_reverse.png');
+	-fx-background-size: 80.0%;
+	-fx-background-alignment: right;
+}
+
+.active-cab-bg {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/driver_cab_active.png');
+	-fx-background-size: 100.0%;
+}
+
+.inactive-cab-bg {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/driver_cab_inactive.png');
+	-fx-background-size: 100.0%;
+}
+
+.legend-grid-outside-border {
+	-fx-border-color: white;
+	-fx-border-insets: 0.0;
+	-fx-border-width: 1.0 1.0 1.0 1.0;
+}
+
+.settings-grid-outside-border {
+	-fx-border-color: white;
+	-fx-border-insets: 0.0;
+	-fx-border-width: 3.0 3.0 3.0 3.0;
+}
+
+.passenger-alarm-connected {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/passenger_alarm_connected.png');
+}
+
+.passenger-alarm-active {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/passenger_alarm_active.png');
+}
+
+.door-emergency-unlock {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/door_emergency_unlock.png');
+}
+
+.door-opened {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/door_opened.png');
+}
+
+.door-closed {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/door_closed.png');
+}
+
+.door-faulty {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/door_faulty.png');
+}
+
+.door-closed-isolated {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/door_closed_isolated.png');
+}
+
+.door-opened-isolated {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/door_opened_isolated.png');
+}
+
+.driver-cab-escape-rear {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/driver_cab_escape_rear.png');
+}
+
+.driver-cab-direction-door-open-close {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/driver_cab_door_closed_opened.png');
+}
+
+.nw-icon-green {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/green_ccu_icon.png');
+}
+
+.nw-icon-yellow {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/yellow_ccu_icon.png');
+}
+
+.nw-icon-red {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/red_hvac_icon.png');
+}
+
+.nw-tabel-border {
+	-fx-background-fill: black, white;
+	-fx-background-insets: 0.0, 1.0;
+}
+
+.fault-indicator-status-normal {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/warning_sign_non.png');
+}
+
+.fault-indicator-status-major {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/warning_sign_red.png');
+}
+
+.fault-indicator-status-medium {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/warning_sign_yellow.png');
+}
+
+.fault-indicator-status-minor {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/warning_sign_white.png');
+}
+
+.battery_cap_70 {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/battery_capacity_0a.png');
+}
+
+.battery_cap_10 {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/battery_capacity_0b.png');
+}
+
+.battery_cap_00 {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/battery_capacity_0c.png');
+}
+
+.voltage_0a {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/voltage_0a.png');
+}
+
+.voltage_0b {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/voltage_0b.png');
+}
+
+.voltage_0c {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/voltage_0c.png');
+}
+
+.current_0a {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/current_0a.png');
+}
+
+.current_0b {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/current_0b.png');
+}
+
+.temperature_0a {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/temperature_0a.png');
+}
+
+.temperature_0b {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/temperature_0b.png');
+}
+
+.fuse-status, .fuse-status:normal {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/traction_aux_fuse_normal.png');
+}
+
+.fuse-status:faulty {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/traction_aux_fuse_faulty.png');
+}
+
+.panto-status, .panto-status:traction_raised {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/traction_aux_panto_raise.png');
+}
+
+.panto-status:traction_down {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/traction_aux_panto_lowered.png');
+}
+
+.panto-status:traction_down_faulty {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/traction_aux_panto_faulty.png');
+}
+
+.panto-status:traction_batteryconnected {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image:
+		url('../images/traction_aux_battery_connected.png');
+}
+
+.panto-status:traction-not_to_raise {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image:
+		url('../images/traction_aux_panto_do_not_raise.png');
+}
+
+.panto-status:traction_raised_faulty {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image:
+		url('../images/traction_aux_panto_raise_faulty.png');
+}
+
+.main-contractor-status, .main-contractor-status:close {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/main_contactor_close.png');
+}
+
+.main-contractor-status:open {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/main_contactor_open.png');
+}
+
+.battery-status, .battery-status:unknown {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/battery_operation.png');
+}
+
+.battery-status:isolated {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/battery_operation.png');
+}
+
+.battery-status:fault {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/battery_faulty.png');
+}
+
+.battery-operation {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/battery_operation.png');
+}
+
+.battery-faulty {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/battery_.png');
+}
+
+.battery-current-voltage-temperature {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/battery_vct.png');
+}
+
+.high-voltage-circuit-breaker-status, .high-voltage-circuit-breaker-status:open {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image:
+		url('../images/high_voltge_circit_breaker_open.png');
+}
+
+.high-voltage-circuit-breaker-status:closed {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image:
+		url('../images/high_voltge_circit_breaker_close.png');
+}
+
+.high-voltage-circuit-breaker-status:active {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image:
+		url('../images/high_voltge_circit_breaker_battery_traction.png');
+}
+
+.high-voltage-circuit-breaker-status:batterytraction {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image:
+		url('../images/high_voltge_circit_breaker_battery_traction.png');
+}
+
+.overhead-line-voltage {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/overhead_line_voltage.png');
+}
+
+.auxilary-voltage {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/auxilary_voltage.png');
+}
+
+.bogie-Isolated {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/bogie_Isolated.png');
+}
+
+.bogie-normal {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/bogie_normal.png');
+}
+
+.air-suspension-ressure {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/air_suspension_ressure.png');
+}
+
+.brake-ylinder-ressure-e {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/brake_ylinder_ressure_e.png');
+}
+
+.brake-ylinder-ressure-f {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/brake_ylinder_ressure_f.png');
+}
+
+.brake-ylinder-ressure-0c {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/brake_ylinder_ressure_0c.png');
+}
+
+.air-condition-red-background {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-color: -fx-red-color;
+}
+
+.air-condition-gray-background {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-color: -fx-dark-gray-color;
+}
+
+.air-condition-green-background {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-color: -fx-green-color;
+}
+
+.bypass-yellow-background {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-color: -fx-yellow-color;
+}
+
+.normal-green-background {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-color: -fx-dark-green-color;
+}
+
+.normal-red-background {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-color: rgb(253.0, 71.0, 67.0);
+}
+
+.interlock-background-color {
+	-fx-background-color: rgb(151.0, 200.0, 240.0);
+}
+
+.interlock-indicator-not-active {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-color: -fx-dark-green-color;
+}
+
+.interlock-indicator-active {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-color: -fx-red-color;
+}
+
+.announcement-green-background {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-color: -fx-green-color;
+	-fx-border-color: -fx-black-color;
+	-fx-border-insets: 0.0;
+	-fx-border-width: 1.0px;
+}
+
+.announcement-gray-background {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-color: -fx-gray-color;
+	-fx-border-color: -fx-black-color;
+	-fx-border-insets: 0.0;
+	-fx-border-width: 1.0px;
+}
+
+.train-view-blue-bg-button {
+	-fx-background-color: -fx-train-view-color;
+	-fx-background-radius: 5.0px;
+}
+
+.bypass-table {
+	-fx-background-color: -fx-light-blue-color;
+	-fx-font-family: Arial;
+	-fx-font-size: 10.0;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ *               Table                                                         *
+ *                                                                             *
+ ******************************************************************************/
+.table-view {
+	-fx-focus-color: white;
+	-fx-focus-traversable: false;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-button, .table-view *.scroll-bar:horizontal *.decrement-button
+	{
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+	-fx-background-insets: 0.0;
+	-fx-padding: 0.0;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-arrow, .table-view *.scroll-bar:horizontal *.decrement-arrow
+	{
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+	-fx-background-insets: 0.0;
+	-fx-padding: 0.0;
+	-fx-shape: null;
+}
+
+.table-view .scroll-bar:vertical>.increment-button, .table-view .scroll-bar:vertical>.decrement-button
+	{
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+	-fx-background-insets: 0.0;
+	-fx-padding: 0.0;
+}
+
+.table-view *.scroll-bar:vertical *.increment-arrow, .table-view *.scroll-bar:vertical *.decrement-arrow
+	{
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+	-fx-background-insets: 0.0;
+	-fx-padding: 0.0;
+	-fx-shape: null;
+}
+
+.table-view .column-header {
+	-fx-background-radius: 0.0em;
+	-fx-background-color: rgb(1.0, 5.0, 13.0);
+	-fx-border-insets: 0.0;
+	-fx-border-width: 0.0px 1.0px 1.0px 0.0px;
+	-fx-border-color: black;
+	-fx-focus-traversable: false;
+}
+
+.table-view .column-header .label {
+	-fx-text-fill: black;
+	-fx-font-size: 22.0px;
+	-fx-font-family: "Times New Roman";
+	-fx-font-weight: normal;
+}
+
+.table-view .column-header#no-border-column {
+	-fx-border-width: 0.0px 0.0px 0.0px 0.0px;
+	-fx-border-color: black;
+	-fx-focus-traversable: false;
+}
+
+.custom-table .table-cell {
+	-fx-text-fill: black;
+	-fx-font-size: 14.0px;
+	-fx-font-family: "Calibri";
+	-fx-font-weight: normal;
+	-fx-border-color: black;
+	-fx-border-width: 1.0px 1.0px 0.0px 0.0px;
+	-fx-padding: 0.0 0.0 0.0 0.0;
+	-fx-alignment: center_left;
+	-fx-background-color: -fx-light-blue-color;
+	-fx-wrap-text: true;
+}
+
+.custom-table .table-cell:centeralign {
+	-fx-text-fill: black;
+	-fx-font-size: 14.0px;
+	-fx-font-family: "Calibri";
+	-fx-font-weight: normal;
+	-fx-border-color: black;
+	-fx-border-width: 1.0px 1.0px 0.0px 1.0px;
+	-fx-padding: 0.0 0.0 0.0 0.0;
+	-fx-alignment: center;
+	-fx-background-color: -fx-light-blue-color;
+	-fx-wrap-text: true;
+}
+
+.table-cell-box-separator {
+	-fx-border-width: 0.0px 1.0px 0.0px 0.0px;
+	-fx-border-color: black;
+}
+/** CSS for table cell label **/
+.label.status-table-lable {
+	-fx-padding: 50.0px;
+	-fx-text-fill: black;
+	-fx-background-color: -fx-light-blue-color;
+	-fx-border-width: 0.0px 0.0px 0.0px 0.0px;
+	-fx-border-color: black;
+	-fx-font-family: "Calibri";
+	-fx-font-weight: lighter;
+	-fx-font-size: 12.0px;
+	-fx-alignment: center;
+}
+
+.label.status-table-lable:bypassstate_normal {
+	-fx-padding: 5.0px;
+	-fx-border-insets: 5.0px;
+	-fx-background-insets: 5.0px 15.0px 5.0px 15.0px;
+	-fx-background-color: -fx-dark-green-color;
+}
+
+.label.status-table-lable:bypassstate_bypass {
+	-fx-padding: 5.0px;
+	-fx-border-insets: 5.0px;
+	-fx-background-insets: 5.0px 15.0px 5.0px 15.0px;
+	-fx-background-color: rgb(255.0, 255.0, 0.0);
+}
+
+.label.status-table-lable:bypass_name {
+	-fx-padding: 5.0px;
+	-fx-border-insets: 5.0px;
+	-fx-background-insets: 5.0px 15.0px 5.0px 15.0px;
+}
+
+.label.status-table-lable:bypassstate_unknown {
+	-fx-background-color: -fx-bypass-cyne-color;
+}
+
+.bypass-label {
+	-fx-text-fill: black;
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Calibri";
+}
+
+/*Fault screen start */
+/** CSS for Fault Status screen **/
+.fault-table {
+	-fx-background-color: -fx-light-blue-color;
+}
+
+.fault-table .column-header {
+	-fx-background-color: -fx-light-blue-color;
+	-fx-border-insets: 0.0;
+	-fx-border-width: 0.0px 0.0px 1.0px 0.0px;
+	-fx-border-color: black;
+	-fx-padding: 0.0 0.0 0.0 0.0;
+	-fx-wrap-text: true;
+	-fx-alignment: center-left;
+}
+
+.fault-table .column-header .label {
+	-fx-text-fill: black;
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Calibri";
+	-fx-font-weight: normal;
+	-fx-background-color: -fx-light-blue-color;
+	-fx-padding: 0.0 0.0 0.0 0.0;
+	-fx-border-width: 0.0px 1.0px 0.0px 0.0px;
+	-fx-alignment: center-left;
+	-fx-border-color: black;
+	-fx-wrap-text: true;
+}
+
+.fault-table .table-cell {
+	-fx-text-fill: black;
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Calibri";
+	-fx-font-weight: normal;
+	-fx-border-color: black;
+	-fx-border-width: 1.0px 1.0px 0.0px 0.0px;
+	-fx-padding: 0.0 0.0 0.0 0.0;
+	-fx-alignment: center-left;
+	-fx-wrap-text: true;
+	-fx-text-alignment: justify;
+}
+
+.fault-table .label {
+	-fx-text-fill: black;
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Calibri";
+	-fx-font-weight: normal;
+	-fx-border-color: black;
+	-fx-padding: 0.0 0.0 0.0 0.0;
+	-fx-alignment: center-left;
+	-fx-wrap-text: true;
+	-fx-text-alignment: justify;
+}
+
+.fault-table .table-first-column {
+	-fx-background-color: -fx-light-blue-color;
+	-fx-text-alignment: justify;
+}
+
+.fault-table .fault-name-column {
+	-fx-font-family: "Calibri";
+	-fx-text-alignment: justify;
+}
+
+.fault-table .table-row-cell {
+	-fx-background-color: -fx-light-blue-color;
+	-fx-text-background-color: black;
+	-fx-text-alignment: justify;
+}
+
+.fault-table .table-row-cell:selected {
+	-fx-background-color: rgb(38.0, 187.0, 253.0);
+	-fx-text-background-color: black;
+	-fx-wrap-text: true;
+	-fx-text-alignment: justify;
+}
+
+.label-fault-code {
+	-fx-background-color: -fx-light-blue-color;
+	-fx-text-fill: black;
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Calibri";
+	-fx-padding: 0.0;
+	-fx-border-width: 1.0px 1.0px 0.0px 0.0px;
+	-fx-border-color: black;
+	-fx-wrap-text: true;
+	-fx-alignment: center-left;
+	-fx-text-alignment: justify;
+}
+
+.label-fault-notification {
+	-fx-background-color: -fx-light-blue-color;
+	-fx-text-fill: black;
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Calibri";
+	-fx-border-width: 1.0px 1.0px 0.0px 0.0px;
+	-fx-border-color: black;
+	-fx-wrap-text: true;
+	-fx-alignment: center-left;
+	-fx-text-alignment: justify;
+}
+
+/*Fault screen end */
+.Tc1-table-no-color {
+	-fx-background-color: rgb(112.0, 254.0, 53.0);
+	-fx-text-fill: black;
+}
+
+.bogies, .bogies:normal {
+	-fx-background-color: rgb(112.0, 254.0, 53.0);
+	-fx-text-fill: black;
+}
+
+.bogies, .bogies:isolated {
+	-fx-background-color: rgb(105.0, 105.0, 105.0);
+	-fx-text-fill: black;
+}
+
+.circle-table {
+	-fx-border-color: -fx-light-gray-color;
+	-fx-border-width: 1.0 1.0 1.0 0.0;
+	-fx-background-color: rgb(134.0, 175.0, 202.0);
+}
+
+.circle-table-panel-2 {
+	-fx-border-color: -fx-light-gray-color;
+	-fx-border-width: 1.0 0.0 1.0 1.0;
+	-fx-background-color: rgb(134.0, 175.0, 202.0);
+}
+
+.fault-details-white-border {
+	-fx-text-fill: black;
+	-fx-font-size: 17.0px;
+	-fx-font-family: "Calibri";
+	-fx-border-width: 1.0px 1.0px 1.0px 1.0px;
+	-fx-border-color: white;
+	-fx-wrap-text: true;
+}
+
+.traction-auxiliary-image {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/traction-image.png');
+}
+
+.label-numbers-color {
+	-fx-text-fill: black;
+	-fx-font-size: 12.0px;
+	-fx-font-family: "Calibri";
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-color: white;
+	-fx-border-color: black;
+}
+
+.hmi-red-fault-operation-screen {
+	-fx-background-color: red;
+}
+
+.hmi-yellow-fault-operation-screen {
+	-fx-background-color: yellow;
+}
+
+.car-panel-label-mrp {
+	-fx-text-fill: black;
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Calibri";
+	-fx-background-position: center;
+}
+
+.network-legend-table {
+	-fx-background-color: -fx-light-blue-color;
+}
+
+.traction-force {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/traction_force.png');
+}
+
+.battery-traction-gridpane{
+	-fx-background-color: white;
+}
+.battery-traction-value-label{
+-fx-border-width: 1.7;
+-fx-border-color: grey;
+-fx-alignment: CENTER;
+}
+
+.traction-aux-tc-12 {
+	-fx-background-image: url('../images/traction_aux_tc_12.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.traction-aux-tc-21 {
+	-fx-background-image: url('../images/traction_aux_tc_21.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.traction-aux-mp-12 {
+	-fx-background-image: url('../images/traction_aux_mp_12.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.traction-aux-mp-21 {
+	-fx-background-image: url('../images/traction_aux_mp_21.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.traction-aux-m-12 {
+	-fx-background-image: url('../images/traction_aux_m_12.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.traction-aux-m-21 {
+	-fx-background-image: url('../images/traction_aux_m_21.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.traction-aux-mp3-12 {
+	-fx-background-image: url('../images/traction_aux_mp3_12.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.traction-aux-mp3-21 {
+	-fx-background-image: url('../images/traction_aux_mp3_21.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.acm-selection-status:selected {
+	-fx-border-color: yellow;
+	-fx-border-width: 3.0;
+}
+
+.acm-selection-status,
+.acm-selection-status:not_selected {
+}
+
+.traction-aux-btn-label {
+	-fx-background-color: white;
+	-fx-border-width: 1.0 2.0 2.0 1.0;
+	-fx-border-color: gray;
+	-fx-font-size: 17.0px;
+	-fx-font-family: "Calibri";
+	-fx-wrap-text: true;
+	-fx-padding: 0.0;
+}
+
+
+.network-tc-12 {
+	-fx-background-image: url('../images/network_screen_tc_12.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.network-tc-21 {
+	-fx-background-image: url('../images/network_screen_tc_21.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.network-mp-12 {
+	-fx-background-image: url('../images/network_screen_mp_12.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+
+.network-mp-21 {
+	-fx-background-image: url('../images/network_screen_mp_21.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.network-mp3-12 {
+	-fx-background-image: url('../images/network_screen_mp3_12.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.network-mp3-21 {
+	-fx-background-image: url('../images/network_screen_mp3_21.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.network-m-12 {
+	-fx-background-image: url('../images/network_screen_m_12.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.network-m-21 {
+	-fx-background-image: url('../images/network_screen_m_21.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.network-m3-12 {
+	-fx-background-image: url('../images/network_screen_m3_12.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.network-m3-21 {
+	-fx-background-image: url('../images/network_screen_m3_21.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.network-screen-label,
+.network-screen-label:green {
+	-fx-background-color:  rgb(116.0,255.0,47.0);
+	-fx-border-color:  rgb(101.0,164.0,114.0);
+	-fx-border-width: 2.0;
+	-fx-font-size: 14.0px;
+	-fx-font-family: "Calibri";
+	-fx-alignment: center;
+	-fx-wrap-text: true;
+}
+
+.network-screen-label:red {
+	-fx-background-color:  red;
+	-fx-border-color:  rgb(101.0,164.0,114.0);
+	-fx-border-width: 2.0;
+	-fx-font-size: 14.0px;
+	-fx-font-family: "Calibri";
+	-fx-alignment: center;
+	-fx-wrap-text: true;
+}
+
+.interlock-screen-label,
+.interlock-screen-label:green {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-color:rgb(52,168,41);
+}
+
+.interlock-screen-label:red {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-color: red;
+}
+
+.interlock-screen-title-label {
+	-fx-text-fill: black;
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Calibri";
+}
+
+.current-train-speed-panel {
+-fx-background-color:white;
+-fx-font-weight: bold;
+-fx-border-width: 2.1;
+-fx-border-color: white;
+-fx-border-color: white;
+
+}
+
+.value-pneal { 
+-fx-background-color:white;
+-fx-font-weight: bold;
+-fx-border-width: 2.0;
+-fx-border-color: white;
+}
+.Speed-limite {
+ -fx-background-color:white;
+ -fx-font-weight: bold;
+-fx-border-width: 2.2;
+-fx-border-color: white;
+}
+.send-limit {
+-fx-background-color:white;
+-fx-font-weight: bold;
+-fx-border-width: 2.2;
+-fx-border-color: white;
+}
+.clean-limite {
+-fx-background-color:white;
+-fx-font-weight: bold;
+-fx-border-width: 2.1;
+-fx-border-color: white;
+}
+.view-limite {
+-fx-background-color:white;
+-fx-font-weight: bold;
+-fx-border-width: 2.1;
+-fx-border-color: white;
+}
+.current-speed-limit {
+-fx-background-color:white;
+-fx-font-weight: bold;
+-fx-border-width: 2.1;
+-fx-border-color: white;
+}
+.set-limit {
+-fx-background-color:white;
+-fx-border-width: 2.1;
+-fx-border-color:white;
+-fx-font-weight: bold;
+}
+
+.lbl-mit {
+-fx-background-color:white;
+-fx-font-weight: bold;
+-fx-border-width: 2.1;
+-fx-border-color: white;
+}
+
+
+.demo-main-screen-grid
+{
+	-fx-background-color:-fx-dark-gray-color;
+	-fx-border-color: white;
+	-fx-border-width: 1.0px;
+}
+
+.middle-panel-head-label{
+	-fx-text-fill: white;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Calibri";
+	-fx-font-weight: bold;
+}
+
+.middle-panel-button{
+	-fx-text-fill: black;
+	-fx-font-size: 16.0px;
+	-fx-font-family: "Calibri";
+	-fx-font-weight: bold;
+	-fx-wrap-text: true;
+}
+
+
+.demo-main-screen-title{
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Calibri";
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+	
+}
+
+.demo-main-screen-footer-button{
+	-fx-font-size: 16.0px;
+	-fx-font-family: "Calibri";
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+	-fx-wrap-text: true;
+	-fx-border-color: white;
+	-fx-border-width: 1.0px;
+}
+
+.demo-main-screen-header-title{
+	-fx-text-fill: white;
+	-fx-font-size: 16.0px;
+	-fx-font-weight: bold;
+	-fx-font-family: "Calibri";
+	-fx-border-width: 1.0px;
+	-fx-border-color: white;
+	
+}
+
+.demo-main-screen-header-value{
+	-fx-text-fill: white;
+	-fx-font-size: 16.0px;
+	-fx-font-weight: bold;
+	-fx-font-family: "Calibri";
+	-fx-border-width: 0.0 1.0 1.0 1.0;
+	-fx-border-color: white;
+}
+
+.demo-main-screen-header-icon{
+	
+	-fx-background-image: url('../images/warning_sign_yellow.png');
+	-fx-alignment: center;
+	-fx-background-position: center;
+	-fx-background-size: 75.0%;
+	-fx-background-repeat: no-repeat;
+
+}
+

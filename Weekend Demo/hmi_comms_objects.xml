@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comms_config>
+  <layer name="Project"> 
+
+<!-- HMI Objects -->
+  <object_class class="HMI" constant_name="HMI" />
+
+  <object_class class="HMIInputs" constant_name="HMI_INPUTS">
+        <!-- Required by the IO Controller -->
+        <object_number name="Class Inputs" constant_name="IO_CONTROLLER_CLASS_INPUTS_TAG" default="0.0" delta="0.5" />
+        <object_number name="Class Inputs" constant_name="CLASS_INPUTS" default="0.0" delta="0.5" />
+        
+        <object_number name="Bypass Button Request" constant_name="BYPASS_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Interlock Check Button Request" constant_name="INTERLOCK_CHECK_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Run Interface Legend Button Request" constant_name="RUN_INTERFACE_LEGEND_BUTTON_REQUEST" default="0.0" delta="0.5" />		
+        <object_number name="Run Interface Legend Back Button Request" constant_name="RUN_INTERFACE_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />	
+        <object_number name="Network Legend Back Button Request" constant_name="NETWORK_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Network Legend Screen Button Request" constant_name="NETWORK_LEGEND_SCREEN_BUTTON_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Traction Auxilary Legend Button Request" constant_name="TRACTION_AUXILARY_LEGEND_BUTTON_REQUEST" default="0.0" delta="0.5" />		
+        <object_number name="Traction Auxilary Interface Legend Back Button Request" constant_name="TRACTION_AUXILARY_INTERFACE_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />	
+        <object_number name="Battery Traction Legend Button Request" constant_name="BATTERY_TRACTION_LEGEND_BUTTON_REQUEST"   default="0.0" delta="0.5" />
+		<object_number name="Battery Traction Legend Back Button Request" constant_name="BATTERY_TRACTION_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />	
+        <object_number name="Air Condition Legend Back Button Request" constant_name="AIR_CONDITION_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Logout Button Request" constant_name="LOGOUT_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Brake Legend Back Button Request " constant_name="BRAKE_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Bypass Screen Button Request " constant_name="BYPASS_SCREEN_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Interlock Screen Button Request " constant_name="INTERLOCK_SCREEN_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Fault Details Back Button Request " constant_name="FAULT_DETAILS_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Current Event Screen Button Pressed" constant_name="CURRENT_EVENT_SCREEN_BUTTON_PRESSED"    	default="0.0" delta="0.5" />
+        <object_number name="Announcement Screen Set Button" constant_name="ANNOUNCEMENT_SCREEN_SET_BUTTON"   default="0.0" delta="0.5" />
+        <object_number name="Settings Button Request" constant_name="SETTINGS_BUTTON_REQUEST"   default="0.0" delta="0.5" />
+        <object_number name="Existing faults Button Request" constant_name="EXISTING_FAULTS_BUTTON_REQUEST"   default="0.0" delta="0.5" />
+        <object_number name="Holding Brake Isolation Button" constant_name="HOLDING_BRAKE_ISOLATION_BUTTON"   default="0.0" delta="0.5" />
+        <object_number name="Holding Brake Isolation Button Activated" constant_name="HOLDING_BRAKE_ISOLATION_BUTTON_ACTIVATED"   default="0.0" delta="0.5" />
+        
+        <!-- Application specific objects -->
+        <object_number name="Screen Change Request" constant_name="SCREEN_CHANGE_REQUEST" default="0.0" delta="0.5" />
+        
+        <!-- Header Panel -->
+        <object_number name="Fault Indicator Press Request" constant_name="FAULT_INDICATOR_PRESS_REQUEST" defaultl="0.0" delta="0.5" />
+        
+        <!-- Footer Panel -->
+        <object_number name="Operation Button Pressed" constant_name="OPERATION_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Network Button Pressed" constant_name="NETWORK_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Traction Auxiliary Button Pressed" constant_name="TRACTION_AUXILIARY_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Brake Button Pressed" constant_name="BRAKE_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Announcement Button Pressed" constant_name="ANNOUNCEMENT_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Air Conditioning Button Pressed" constant_name="AIR_CONDITIONING_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Main Menu Button Pressed" constant_name="MAIN_MENU_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Bypass Button Pressed" constant_name="BYPASS_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Interlock Check Button Pressed" constant_name="INTERLOCK_CHECK_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        
+        
+        <!--Current Event  screen  -->
+        <object_number name="Event Screen First Page Request" constant_name="EVENT_SCREEN_FIRST_PAGE_REQUEST"    default="0.0" delta="0.5" />
+        <object_number name="Event Screen Last Page Request" constant_name="EVENT_SCREEN_LAST_PAGE_REQUEST"    default="0.0" delta="0.5" />
+        <object_number name="Event Screen Previous Page Request" constant_name="EVENT_SCREEN_PREVIOUS_PAGE_REQUEST"    default="0.0" delta="0.5" />
+        <object_number name="Event Screen Next Page Request" constant_name="EVENT_SCREEN_NEXT_PAGE_REQUEST"    default="0.0" delta="0.5" />
+        <object_number name="Current Event List Selected Event Index" constant_name="CURRENT_EVENT_LIST_SELECTED_EVENT_INDEX"    default="0.0" delta="0.5" />
+        <object_number name="Current Event Screen Hint Button Request" constant_name="CURRENT_EVENT_HINT_BUTTON_REQUEST"    default="0.0" delta="0.5" />
+        
+        <!--Login Screen Buttons -->
+        <object_number name="Login Screen Button 0 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_0_PRESSED" 				default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 1 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_1_PRESSED"    			default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 2 Pressed" 	constant_name="LOGIN_SCREEN_BUTTON_2_PRESSED" 		default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 3 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_3_PRESSED" 				default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 4 Pressed"    constant_name="LOGIN_SCREEN_BUTTON_4_PRESSED"			default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 5 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_5_PRESSED"    			default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 6 Pressed" 	constant_name="LOGIN_SCREEN_BUTTON_6_PRESSED" 		default="0.0" delta="0.5" /> 
+        <object_number name="Login Screen Button 7 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_7_PRESSED" 				default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 8 Pressed"    constant_name="LOGIN_SCREEN_BUTTON_8_PRESSED"			default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 9 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_9_PRESSED"    			default="0.0" delta="0.5" />
+        <object_number name="Login Screen Cancel Button Pressed" 	constant_name="LOGIN_SCREEN_CANCEL_BUTTON_PRESSED" 		default="0.0" delta="0.5" />
+        <object_number name="Login Screen Login Button Pressed"    constant_name="LOGIN_SCREEN_LOGIN_BUTTON_PRESSED"			default="0.0" delta="0.5" />
+        
+        <!-- Announcement Screen -->
+        <object_number name="ATO Current Station Id" constant_name="ATO_CURRENT_STATION_ID" default="0.0" delta="0.5" />
+        <object_number name="ATO Next Station Id" constant_name="ATO_NEXT_STATION_ID" default="0.0" delta="0.5" />
+        <object_number name="ATO Terminal Station Id" constant_name="ATO_TERMINAL_STATION_ID" default="0.0" delta="0.5" />
+        
+        <!-- Fault Screen -->
+        <object_number name="Fault History Screen - Selected Fault Id Request" constant_name="FAULT_HISTORY_SCREEN_SELECTED_FAULT_ID_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Event Screen Previous Page Request" constant_name="EVENT_SCREEN_PREVIOUS_PAGE_REQUEST"    default="0.0" delta="0.5" />
+        <object_number name="Fault Details Screen Button Request " constant_name="FAULT_DETAILS_SCREEN_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="First Page Fault List" constant_name="FIRST_PAGE_FAULT_LIST" default="0.0" delta="0.5" />
+        <object_number name="Last Page Fault List " constant_name="LAST_PAGE_FAULT_LIST" default="0.0" delta="0.5" />
+        
+        <object_number name="First Button Request " constant_name="FIRST_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Last Button Request " constant_name="LAST_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Previous Button Request " constant_name="PREVIOUS_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Next Button Request " constant_name="NEXT_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Fault Details Screen Button Request " constant_name="FAULT_DETAILS_SCREEN_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Active Event Accept Request"        constant_name="ACTIVE_EVENT_ACCEPT_REQUEST"       default="0.0" delta="0.5" />
+        <object_number name="Acknowledge Button Request"        constant_name="ACKNOWLEDGE_BUTTON_REQUEST"       default="0.0" delta="0.5" />
+		
+		<!-- Brake Screen -->
+		<object_number name="Holding Brake Button"        constant_name="HOLDING_BRAKE_BUTTON"       default="0.0" delta="0.5" />
+		<object_number name="Holding Brake Button Request"        constant_name="HOLDING_BRAKE_BUTTON_REQUEST"       default="0.0" delta="0.5" />
+
+		<!-- Traction Auxiliary Screen -->
+		<object_number name="ACM Selected Car Index" constant_name="ACM_SELECTED_CAR_INDEX" default="-1" delta="0.5" />
+		<object_number name="MCM Selected Car Index" constant_name="MCM_SELECTED_CAR_INDEX" default="-1" delta="0.5" />
+		<object_number name="Traction Auxilary Isolation Button" constant_name="TRACTION_AUXILARY_ISOLATION_BUTTON" default="0.0" delta="0.5" />
+		<object_number name="Traction Auxilary Reinstate Button" constant_name="TRACTION_AUXILARY_REINSTATE_BUTTON" default="0.0" delta="0.5" />
+		<object_number name="Traction Auxilary Battery Button" constant_name="TRACTION_AUXILARY_BATTERY_BUTTON" default="0.0" delta="0.5" />
+		<object_number name="Traction Auxilary Isolation Button Request" constant_name="TRACTION_AUXILARY_ISOLATION_BUTTON_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Traction Auxilary Reinstate Button Request" constant_name="TRACTION_AUXILARY_REINSTATE_BUTTON_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="my first project" constant_name="MY_FIRST_PROJECT" default="0.0" delta="0.5" />
+		<object_number name="Test Speed Limit" constant_name="TEST_SPEED_LIMIT" default="0.0" delta="0.5" />
+		
+		
+		<object_number name="Event History Btn Request" constant_name="EVENT_HISTORY_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Event Overview Btn Request" constant_name="EVENT_OVERVIEW_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Train Status Btn Request" constant_name="TRAIN_STATUS_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Interlock Btn Request" constant_name="INTERLOCK_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Brake Test Btn Request" constant_name="BRAKE_TEST_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Trakction Break Test Btn Request" constant_name="TRACTION_BREAK_TEST_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Setting Btn Request" constant_name="SETTING_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Program Version Btn Request" constant_name="PROGRAM_VERSION_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Operational Data Btn Request" constant_name="OPERATIONAL_DATA_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Door Btn Request" constant_name="DOOR_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Break Air Btn Request" constant_name="BREAK_AIR_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Prop Auxi Bettery Btn Request" constant_name="PROP_AUXI_BETTERY_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Acu Btn Request" constant_name="ACU_BTN_REQUEST" default="0.0" delta="0.5" />
+       <object_number name="Pids Btn Request" constant_name="PIDS_BTN_REQUEST" default="0.0" delta="0.5" />
+	   
+	    <object_number name="Demo Speed Limit" constant_name="DEMO_SPEED_LIMIT" default="0.0" delta="0.5" />
+
+
+      </object_class>
+
+    <object_class class="HMIInputsValues" constant_name="HMI_INPUTS_VALUES">
+        <!-- Required by the IO Controller -->
+        <object_number name="Class Values" constant_name="IO_CONTROLLER_CLASS_VALUES_TAG" default="0.0" delta="0.5" />
+        <object_number name="Class Values" constant_name="CLASS_VALUES"    default="0.0" delta="0.5" />
+        
+        <object_number name="Bypass Button Request" constant_name="BYPASS_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Interlock Check Button Request" constant_name="INTERLOCK_CHECK_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Run Interface Legend Button Request" constant_name="RUN_INTERFACE_LEGEND_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Run Interface Legend Back Button Request" constant_name="RUN_INTERFACE_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />	
+        <object_number name="Network Legend Back Button Request" constant_name="NETWORK_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Network Legend Screen Button Request" constant_name="NETWORK_LEGEND_SCREEN_BUTTON_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Traction Auxilary Legend Button Request" constant_name="TRACTION_AUXILARY_LEGEND_BUTTON_REQUEST" default="0.0" delta="0.5" />		
+	   <object_number name="Traction Auxilary Interface Legend Back Button Request" constant_name="TRACTION_AUXILARY_INTERFACE_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />	
+       <object_number name="Battery Traction Legend Button Request" constant_name="BATTERY_TRACTION_LEGEND_BUTTON_REQUEST"   default="0.0" delta="0.5" />
+		<object_number name="Battery Traction Legend Back Button Request" constant_name="BATTERY_TRACTION_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />	
+        <object_number name="Air Condition Legend Back Button Request" constant_name="AIR_CONDITION_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Logout Button Request" constant_name="LOGOUT_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Brake Legend Back Button Request " constant_name="BRAKE_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Bypass Screen Button Request " constant_name="BYPASS_SCREEN_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Interlock Screen Button Request " constant_name="INTERLOCK_SCREEN_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Fault Details Back Button Request " constant_name="FAULT_DETAILS_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Settings Button Request" constant_name="SETTINGS_BUTTON_REQUEST"   default="0.0" delta="0.5" />
+        <object_number name="Existing faults Button Request" constant_name="EXISTING_FAULTS_BUTTON_REQUEST"   default="0.0" delta="0.5" />
+        <object_number name="Holding Brake Isolation Button" constant_name="HOLDING_BRAKE_ISOLATION_BUTTON"   default="0.0" delta="0.5" />
+        <object_number name="Holding Brake Isolation Button Activated" constant_name="HOLDING_BRAKE_ISOLATION_BUTTON_ACTIVATED"   default="0.0" delta="0.5" />
+        <object_number name="Current Event Screen Button Pressed" constant_name="CURRENT_EVENT_SCREEN_BUTTON_PRESSED"    	default="0.0" delta="0.5" />
+        <object_number name="Screen Change Request" constant_name="SCREEN_CHANGE_REQUEST" default="0.0" delta="0.5" />
+        
+        <!-- Header Panel -->
+        <object_number name="Fault Indicator Press Request" constant_name="FAULT_INDICATOR_PRESS_REQUEST" defaultl="0.0" delta="0.5" />
+        
+        <!-- Footer Panel -->
+        <object_number name="Operation Button Pressed" constant_name="OPERATION_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Network Button Pressed" constant_name="NETWORK_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Traction Auxiliary Button Pressed" constant_name="TRACTION_AUXILIARY_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Brake Button Pressed" constant_name="BRAKE_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Announcement Button Pressed" constant_name="ANNOUNCEMENT_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Air Conditioning Button Pressed" constant_name="AIR_CONDITIONING_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Main Menu Button Pressed" constant_name="MAIN_MENU_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Bypass Button Pressed" constant_name="BYPASS_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Interlock Check Button Pressed" constant_name="INTERLOCK_CHECK_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        
+        <!--Current Event  screen  -->
+        <object_number name="Event Screen First Page Request" constant_name="EVENT_SCREEN_FIRST_PAGE_REQUEST"    default="0.0" delta="0.5" />
+        <object_number name="Event Screen Last Page Request" constant_name="EVENT_SCREEN_LAST_PAGE_REQUEST"    default="0.0" delta="0.5" />
+        <object_number name="Event Screen Previous Page Request" constant_name="EVENT_SCREEN_PREVIOUS_PAGE_REQUEST"    default="0.0" delta="0.5" />
+        <object_number name="Event Screen Next Page Request" constant_name="EVENT_SCREEN_NEXT_PAGE_REQUEST"    default="0.0" delta="0.5" />
+        <object_number name="Current Event List Selected Event Index" constant_name="CURRENT_EVENT_LIST_SELECTED_EVENT_INDEX"    default="0.0" delta="0.5" />
+        <object_number name="Current Event Screen Hint Button Request" constant_name="CURRENT_EVENT_HINT_BUTTON_REQUEST"    default="0.0" delta="0.5" />
+        
+        <!--Login Screen Buttons -->
+        <object_number name="Login Screen Button 0 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_0_PRESSED" 				default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 1 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_1_PRESSED"    			default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 2 Pressed" 	constant_name="LOGIN_SCREEN_BUTTON_2_PRESSED" 		default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 3 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_3_PRESSED" 				default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 4 Pressed"    constant_name="LOGIN_SCREEN_BUTTON_4_PRESSED"			default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 5 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_5_PRESSED"    			default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 6 Pressed" 	constant_name="LOGIN_SCREEN_BUTTON_6_PRESSED" 		default="0.0" delta="0.5" /> 
+        <object_number name="Login Screen Button 7 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_7_PRESSED" 				default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 8 Pressed"    constant_name="LOGIN_SCREEN_BUTTON_8_PRESSED"			default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 9 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_9_PRESSED"    			default="0.0" delta="0.5" />
+        <object_number name="Login Screen Cancel Button Pressed" 	constant_name="LOGIN_SCREEN_CANCEL_BUTTON_PRESSED" 		default="0.0" delta="0.5" />
+        <object_number name="Login Screen Login Button Pressed"    constant_name="LOGIN_SCREEN_LOGIN_BUTTON_PRESSED"			default="0.0" delta="0.5" />
+        
+        <!-- Announcement Screen -->
+        <object_number name="ATO Current Station Id" constant_name="ATO_CURRENT_STATION_ID" default="0.0" delta="0.5" />
+        <object_number name="ATO Next Station Id" constant_name="ATO_NEXT_STATION_ID" default="0.0" delta="0.5" />
+        <object_number name="ATO Terminal Station Id" constant_name="ATO_TERMINAL_STATION_ID" default="0.0" delta="0.5" />
+        
+        <!-- Fault Screen -->
+        <object_number name="Fault History Screen - Selected Fault Id Request" constant_name="FAULT_HISTORY_SCREEN_SELECTED_FAULT_ID_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Event Screen Previous Page Request" constant_name="EVENT_SCREEN_PREVIOUS_PAGE_REQUEST"    default="0.0" delta="0.5" />
+        <object_number name="Fault Details Screen Button Request " constant_name="FAULT_DETAILS_SCREEN_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="First Page Fault List" constant_name="FIRST_PAGE_FAULT_LIST" default="0.0" delta="0.5" />
+        <object_number name="Last Page Fault List " constant_name="LAST_PAGE_FAULT_LIST" default="0.0" delta="0.5" />
+        
+        <object_number name="First Button Request " constant_name="FIRST_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Last Button Request " constant_name="LAST_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Previous Button Request " constant_name="PREVIOUS_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Next Button Request " constant_name="NEXT_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Fault Details Screen Button Request " constant_name="FAULT_DETAILS_SCREEN_BUTTON_REQUEST" default="0.0" delta="0.5" />		
+        <object_number name="Active Event Accept Request"        constant_name="ACTIVE_EVENT_ACCEPT_REQUEST"       default="0.0" delta="0.5" />
+        <object_number name="Acknowledge Button Request"        constant_name="ACKNOWLEDGE_BUTTON_REQUEST"       default="0.0" delta="0.5" />
+		
+		<!-- Brake Screen -->
+		<object_number name="Holding Brake Button"        constant_name="HOLDING_BRAKE_BUTTON"       default="0.0" delta="0.5" />
+		<object_number name="Holding Brake Button Request"        constant_name="HOLDING_BRAKE_BUTTON_REQUEST"       default="0.0" delta="0.5" />
+		
+		<!-- Traction Auxiliary Screen -->
+		<object_number name="ACM Selected Car Index" constant_name="ACM_SELECTED_CAR_INDEX" default="-1" delta="0.5" />
+		<object_number name="MCM Selected Car Index" constant_name="MCM_SELECTED_CAR_INDEX" default="-1" delta="0.5" />
+		<object_number name="Traction Auxilary Isolation Button" constant_name="TRACTION_AUXILARY_ISOLATION_BUTTON" default="0.0" delta="0.5" />
+		<object_number name="Traction Auxilary Reinstate Button" constant_name="TRACTION_AUXILARY_REINSTATE_BUTTON" default="0.0" delta="0.5" />
+		<object_number name="Traction Auxilary Battery Button" constant_name="TRACTION_AUXILARY_BATTERY_BUTTON" default="0.0" delta="0.5" />
+		<object_number name="Traction Auxilary Isolation Button Request" constant_name="TRACTION_AUXILARY_ISOLATION_BUTTON_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Traction Auxilary Reinstate Button Request" constant_name="TRACTION_AUXILARY_REINSTATE_BUTTON_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="my first project" constant_name="MY_FIRST_PROJECT" default="0.0" delta="0.5" />
+		<object_number name="Test Speed Limit " constant_name="TEST_SPEED_LIMIT" default="0.0" delta="0.5" />
+		
+	    <object_number name="Event History Btn Request" constant_name="EVENT_HISTORY_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Event Overview Btn Request" constant_name="EVENT_OVERVIEW_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Train Status Btn Request" constant_name="TRAIN_STATUS_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Interlock Btn Request" constant_name="INTERLOCK_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Brake Test Btn Request" constant_name="BRAKE_TEST_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Trakction Break Test Btn Request" constant_name="TRACTION_BREAK_TEST_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Setting Btn Request" constant_name="SETTING_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Program Version Btn Request" constant_name="PROGRAM_VERSION_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Operational Data Btn Request" constant_name="OPERATIONAL_DATA_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Door Btn Request" constant_name="DOOR_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Break Air Btn Request" constant_name="BREAK_AIR_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Prop Auxi Bettery Btn Request" constant_name="PROP_AUXI_BETTERY_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Acu Btn Request" constant_name="ACU_BTN_REQUEST" default="0.0" delta="0.5" />
+       <object_number name="Pids Btn Request" constant_name="PIDS_BTN_REQUEST" default="0.0" delta="0.5" />
+	   
+	    <object_number name="Demo Speed Limit" constant_name="DEMO_SPEED_LIMIT" default="0.0" delta="0.5" />
+
+
+    </object_class>
+
+        <object_class class="HMIInputsModes" constant_name="HMI_INPUTS_MODES">
+        <!-- Required by the IO Controller -->
+        <object_number name="Class Modes" constant_name="IO_CONTROLLER_CLASS_MODES_TAG"    default="0.0" delta="0.5" />
+        <object_number name="Class Modes" constant_name="CLASS_MODES" default="0.0" delta="0.5" />
+        
+        <object_number name="Bypass Button Request" constant_name="BYPASS_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Interlock Check Button Request" constant_name="INTERLOCK_CHECK_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Run Interface Legend Button Request" constant_name="RUN_INTERFACE_LEGEND_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Run Interface Legend Back Button Request" constant_name="RUN_INTERFACE_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />	
+        <object_number name="Network Legend Back Button Request" constant_name="NETWORK_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Network Legend Screen Button Request" constant_name="NETWORK_LEGEND_SCREEN_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Traction Auxilary Legend Button Request" constant_name="TRACTION_AUXILARY_LEGEND_BUTTON_REQUEST" default="0.0" delta="0.5" />		
+		<object_number name="Traction Auxilary Interface Legend Back Button Request" constant_name="TRACTION_AUXILARY_INTERFACE_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />	
+        <object_number name="Battery Traction Legend Button Request" constant_name="BATTERY_TRACTION_LEGEND_BUTTON_REQUEST"   default="0.0" delta="0.5" />
+		<object_number name="Battery Traction Legend Back Button Request" constant_name="BATTERY_TRACTION_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />	
+        <object_number name="Air Condition Legend Back Button Request" constant_name="AIR_CONDITION_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Logout Button Request" constant_name="LOGOUT_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Brake Legend Back Button Request " constant_name="BRAKE_LEGEND_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Bypass Screen Button Request " constant_name="BYPASS_SCREEN_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Interlock Screen Button Request " constant_name="INTERLOCK_SCREEN_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Fault Details Back Button Request " constant_name="FAULT_DETAILS_BACK_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Settings Button Request" constant_name="SETTINGS_BUTTON_REQUEST"   default="0.0" delta="0.5" />
+        <object_number name="Existing faults Button Request" constant_name="EXISTING_FAULTS_BUTTON_REQUEST"   default="0.0" delta="0.5" />
+        <object_number name="Current Event Screen Button Pressed" constant_name="CURRENT_EVENT_SCREEN_BUTTON_PRESSED"    	default="0.0" delta="0.5" />
+        <object_number name="Holding Brake Isolation Button" constant_name="HOLDING_BRAKE_ISOLATION_BUTTON"   default="0.0" delta="0.5" />
+        <object_number name="Holding Brake Isolation Button Activated" constant_name="HOLDING_BRAKE_ISOLATION_BUTTON_ACTIVATED"   default="0.0" delta="0.5" />
+        <object_number name="Screen Change Request" constant_name="SCREEN_CHANGE_REQUEST" default="0.0" delta="0.5" />
+        
+        <!-- Header Panel -->
+        <object_number name="Fault Indicator Press Request" constant_name="FAULT_INDICATOR_PRESS_REQUEST" defaultl="0.0" delta="0.5" />
+        
+        <!-- Footer Panel -->
+        <object_number name="Operation Button Pressed" constant_name="OPERATION_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Network Button Pressed" constant_name="NETWORK_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Traction Auxiliary Button Pressed" constant_name="TRACTION_AUXILIARY_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Brake Button Pressed" constant_name="BRAKE_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Announcement Button Pressed" constant_name="ANNOUNCEMENT_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Air Conditioning Button Pressed" constant_name="AIR_CONDITIONING_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Main Menu Button Pressed" constant_name="MAIN_MENU_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Bypass Button Pressed" constant_name="BYPASS_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        <object_number name="Interlock Check Button Pressed" constant_name="INTERLOCK_CHECK_BUTTON_PRESSED" defaultl="0.0" delta="0.5" />
+        
+        <!--Current Event  screen  -->
+        <object_number name="Event Screen First Page Request" constant_name="EVENT_SCREEN_FIRST_PAGE_REQUEST"    default="0.0" delta="0.5" />
+        <object_number name="Event Screen Last Page Request" constant_name="EVENT_SCREEN_LAST_PAGE_REQUEST"    default="0.0" delta="0.5" />
+        <object_number name="Event Screen Previous Page Request" constant_name="EVENT_SCREEN_PREVIOUS_PAGE_REQUEST"    default="0.0" delta="0.5" />
+        <object_number name="Event Screen Next Page Request" constant_name="EVENT_SCREEN_NEXT_PAGE_REQUEST"    default="0.0" delta="0.5" />
+        <object_number name="Current Event List Selected Event Index" constant_name="CURRENT_EVENT_LIST_SELECTED_EVENT_INDEX"    default="0.0" delta="0.5" />
+        <object_number name="Current Event Screen Hint Button Request" constant_name="CURRENT_EVENT_HINT_BUTTON_REQUEST"    default="0.0" delta="0.5" />
+        
+        <!--Login Screen Buttons -->
+        <object_number name="Login Screen Button 0 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_0_PRESSED" 				default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 1 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_1_PRESSED"    			default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 2 Pressed" 	constant_name="LOGIN_SCREEN_BUTTON_2_PRESSED" 		default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 3 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_3_PRESSED" 				default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 4 Pressed"    constant_name="LOGIN_SCREEN_BUTTON_4_PRESSED"			default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 5 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_5_PRESSED"    			default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 6 Pressed" 	constant_name="LOGIN_SCREEN_BUTTON_6_PRESSED" 		default="0.0" delta="0.5" /> 
+        <object_number name="Login Screen Button 7 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_7_PRESSED" 				default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 8 Pressed"    constant_name="LOGIN_SCREEN_BUTTON_8_PRESSED"			default="0.0" delta="0.5" />
+        <object_number name="Login Screen Button 9 Pressed" 		constant_name="LOGIN_SCREEN_BUTTON_9_PRESSED"    			default="0.0" delta="0.5" />
+        <object_number name="Login Screen Cancel Button Pressed" 	constant_name="LOGIN_SCREEN_CANCEL_BUTTON_PRESSED" 		default="0.0" delta="0.5" />
+        <object_number name="Login Screen Login Button Pressed"    constant_name="LOGIN_SCREEN_LOGIN_BUTTON_PRESSED"			default="0.0" delta="0.5" />
+        
+        <!-- Announcement Screen -->
+        <object_number name="ATO Current Station Id" constant_name="ATO_CURRENT_STATION_ID" default="0.0" delta="0.5" />
+        <object_number name="ATO Next Station Id" constant_name="ATO_NEXT_STATION_ID" default="0.0" delta="0.5" />
+        <object_number name="ATO Terminal Station Id" constant_name="ATO_TERMINAL_STATION_ID" default="0.0" delta="0.5" />
+        
+        <!-- Fault Screen -->
+        <object_number name="Fault History Screen - Selected Fault Id Request" constant_name="FAULT_HISTORY_SCREEN_SELECTED_FAULT_ID_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Event Screen Previous Page Request" constant_name="EVENT_SCREEN_PREVIOUS_PAGE_REQUEST"    default="0.0" delta="0.5" />
+        <object_number name="Fault Details Screen Button Request " constant_name="FAULT_DETAILS_SCREEN_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="First Page Fault List" constant_name="FIRST_PAGE_FAULT_LIST" default="0.0" delta="0.5" />
+        <object_number name="Last Page Fault List " constant_name="LAST_PAGE_FAULT_LIST" default="0.0" delta="0.5" />
+        
+        <object_number name="First Button Request " constant_name="FIRST_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Last Button Request " constant_name="LAST_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Previous Button Request " constant_name="PREVIOUS_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Next Button Request " constant_name="NEXT_BUTTON_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Fault Details Screen Button Request " constant_name="FAULT_DETAILS_SCREEN_BUTTON_REQUEST" default="0.0" delta="0.5" />		
+        <object_number name="Active Event Accept Request"        constant_name="ACTIVE_EVENT_ACCEPT_REQUEST" default="0.0" delta="0.5" />
+        <object_number name="Acknowledge Button Request"        constant_name="ACKNOWLEDGE_BUTTON_REQUEST"       default="0.0" delta="0.5" />
+
+		<!-- Brake Screen -->
+		<object_number name="Holding Brake Button"        constant_name="HOLDING_BRAKE_BUTTON"       default="0.0" delta="0.5" />
+		<object_number name="Holding Brake Button Request"        constant_name="HOLDING_BRAKE_BUTTON_REQUEST"       default="0.0" delta="0.5" />
+		
+		<!-- Traction Auxiliary Screen -->
+		<object_number name="ACM Selected Car Index" constant_name="ACM_SELECTED_CAR_INDEX" default="-1" delta="0.5" />
+		<object_number name="MCM Selected Car Index" constant_name="MCM_SELECTED_CAR_INDEX" default="-1" delta="0.5" />
+		<object_number name="Traction Auxilary Isolation Button" constant_name="TRACTION_AUXILARY_ISOLATION_BUTTON" default="0.0" delta="0.5" />
+		<object_number name="Traction Auxilary Reinstate Button" constant_name="TRACTION_AUXILARY_REINSTATE_BUTTON" default="0.0" delta="0.5" />
+		<object_number name="Traction Auxilary Battery Button" constant_name="TRACTION_AUXILARY_BATTERY_BUTTON" default="0.0" delta="0.5" />
+		<object_number name="Traction Auxilary Isolation Button Request" constant_name="TRACTION_AUXILARY_ISOLATION_BUTTON_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Traction Auxilary Reinstate Button Request" constant_name="TRACTION_AUXILARY_REINSTATE_BUTTON_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="my first project" constant_name="MY_FIRST_PROJECT " default="0.0" delta="0.5" />
+		<object_number name="Test Speed Limit" constant_name="TEST_SPEED_LIMIT " default="0.0" delta="0.5" />
+		
+		<object_number name="Event History Btn Request" constant_name="EVENT_HISTORY_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Event Overview Btn Request" constant_name="EVENT_OVERVIEW_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Train Status Btn Request" constant_name="TRAIN_STATUS_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Interlock Btn Request" constant_name="INTERLOCK_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Brake Test Btn Request" constant_name="BRAKE_TEST_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Trakction Break Test Btn Request" constant_name="TRACTION_BREAK_TEST_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Setting Btn Request" constant_name="SETTING_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Program Version Btn Request" constant_name="PROGRAM_VERSION_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Operational Data Btn Request" constant_name="OPERATIONAL_DATA_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Door Btn Request" constant_name="DOOR_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Break Air Btn Request" constant_name="BREAK_AIR_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Prop Auxi Bettery Btn Request" constant_name="PROP_AUXI_BETTERY_BTN_REQUEST" default="0.0" delta="0.5" />
+		<object_number name="Acu Btn Request" constant_name="ACU_BTN_REQUEST" default="0.0" delta="0.5" />
+       <object_number name="Pids Btn Request" constant_name="PIDS_BTN_REQUEST" default="0.0" delta="0.5" />
+	   
+	   <object_number name="Demo Speed Limit" constant_name="DEMO_SPEED_LIMIT" default="0.0" delta="0.5" />
+
+
+     </object_class>
+
+        <object_class class="HMIOutputs" constant_name="HMI_OUTPUTS">
+        <!-- Required by the IO Controller -->
+        <object_number name="Class Outputs" constant_name="IO_CONTROLLER_CLASS_OUTPUTS_TAG"    default="0.0" delta="0.5" />
+        <object_number name="Class Outputs" constant_name="CLASS_OUTPUTS" default="0.0" delta="0.5" />
+        
+        <object_number name="Current Screen Id" constant_name="CURRENT_SCREEN_ID" default="0.0" delta="0.5" />
+        
+        <object_raw name="Train Configuration Data" constant_name="TRAIN_CONFIGURATION_DATA" /> 
+        <object_raw name="Cab Door Status" constant_name="CAB_DOOR_STATUS" /> 
+        <object_raw name="Driver Cab Direction" constant_name="DRIVER_CAB_DIRECTION" /> 
+        <object_raw name="ACM Status" constant_name="ACM_STATUS" /> 
+        <object_raw name="MCM Status" constant_name="MCM_STATUS" /> 
+        <object_raw name="Parking Brake Data" constant_name="PARKING_BRAKE_DATA" /> 
+        <object_raw name="No 1 Air Brake Status" constant_name="NO_1_AIR_BRAKE_STATUS" /> 
+        <object_raw name="No 2 Air Brake Status" constant_name="NO_2_AIR_BRAKE_STATUS" /> 
+        <object_raw name="Air Compressor Status" constant_name="AIR_COMPRESSOR_STATUS" /> 
+        <object_raw name="Pantograph Status" constant_name="PANTOGRAPH_STATUS" /> 
+        <object_raw name="Operating Mode" constant_name="OPERATING_MODE" /> 
+        <object_number name="TC1 Cab Active" constant_name="TC1_CAB_ACTIVE" default="0.0" delta="0.5" />
+        <object_number name="TC2 Cab Active" constant_name="TC2_CAB_ACTIVE" default="0.0" delta="0.5" />
+        
+        <!-- Traction Auxiliary Screen -->
+        <object_raw name="Battery Status List" constant_name="BATTERY_STATUS_LIST" /> 
+        <object_raw name="High Speed Circuit Breaker Status List" constant_name="HIGH_SPEED_CIRCUIT_BREAKER_STATUS_LIST" /> 
+        <object_raw name="Tractive Force List" constant_name="TRACTIVE_FORCE_LIST" /> 
+        <object_raw name="Overhead Line Voltage List" constant_name="OVERHEAD_LINE_VOLTAGE_LIST" /> 
+        <object_raw name="Fuse List" constant_name="FUSE_LIST" /> 
+        <object_raw name="Main Contractor List" constant_name="MAIN_CONTRACTOR_LIST" /> 
+        <object_raw name="Auxiliary Voltage List" constant_name="AUXILIARY_VOLTAGE_LIST" /> 
+        <object_raw name="Battery Voltage List" constant_name="BATTERY_VOLTAGE_LIST" /> 
+        <object_raw name="Battery Current List" constant_name="BATTERY_CURRENT_LIST" /> 
+        <object_raw name="Battery Temperature List" constant_name="BATTERY_TEMPERATURE_LIST" /> 
+        <object_raw name="Panto List" constant_name="PANTO_LIST" /> 
+
+        <!-- Brake Screen -->
+        <object_raw name="Brake Cylinder Pressure List" constant_name="BRAKE_CYLINDER_PRESSURE_LIST" /> 
+        <object_raw name="No 1 Bogie Status List"       constant_name="NO_1_BOGIE_STATUS_LIST" /> 
+        <object_raw name="No 2 Bogie Status List"       constant_name="NO_2_BOGIE_STATUS_LIST" /> 
+        <object_raw name="No 1 Bogie Status List"       constant_name="NO_1_BOGIE_STATUS_LIST" /> 
+        <object_raw name="No 1 Air Suspension List"     constant_name="NO_1_AIR_SUSPENSION_LIST" /> 
+        <object_raw name="No 2 Air Suspension List"     constant_name="NO_2_AIR_SUSPENSION_LIST" /> 
+        <object_raw name="Car Loading Rate List"        constant_name="CAR_LOADING_RATE_LIST" /> 
+		<object_number name="Holding Brake Button State"        constant_name="HOLDING_BRAKE_BUTTON_STATE"       default="0.0" delta="0.5" />
+
+
+        <!-- Header Panel -->
+        <object_raw name="Train Number" constant_name="TRAIN_NUMBER" />
+        <object_raw name="Next Station Name" constant_name="NEXT_STATION_NAME" />
+        <object_raw name="Terminal Station Name" constant_name="TERMINAL_STATION_NAME" />
+        <object_number name="Line Voltage" constant_name="LINE_VOLTAGE" default="0.0" delta="0.5" />
+        <object_number name="Line Current" constant_name="LINE_CURRENT" default="0.0" delta="0.5" />
+        <object_number name="Handle Position" constant_name="HANDLE_POSITION" default="0.0" delta="0.5" />
+        <object_number name="Current Speed" constant_name="CURRENT_SPEED" default="0.0" delta="0.01" />
+        <object_number name="Fault Indicator Status" constant_name="FAULT_INDICATOR_STATUS" default="0.0" delta="0.5" />
+        <object_number name="Communication Lost" constant_name="COMMUNICATION_LOST" default="0.0" delta="0.5" />
+        
+        <!-- Footer Panel -->
+        <object_number name="Enable Help Button" constant_name="ENABLE_HELP_BUTTON" default="0.0" delta="0.5" />
+        
+        <!-- Stations Announcement Setting Screen  -->
+        <object_raw name="Station List" constant_name="STATION_LIST" />
+        
+        <object_raw name="Door A1 Status" constant_name="DOOR_A1_STATUS" />
+        <object_raw name="Door A2 Status" constant_name="DOOR_A2_STATUS" />
+        <object_raw name="Door A3 Status" constant_name="DOOR_A3_STATUS" />
+        <object_raw name="Door A4 Status" constant_name="DOOR_A4_STATUS" />
+        <object_raw name="Door A5 Status" constant_name="DOOR_A5_STATUS" />
+        <object_raw name="Door B1 Status" constant_name="DOOR_B1_STATUS" />
+        <object_raw name="Door B2 Status" constant_name="DOOR_B2_STATUS" />
+        <object_raw name="Door B3 Status" constant_name="DOOR_B3_STATUS" />
+        <object_raw name="Door B4 Status" constant_name="DOOR_B4_STATUS" />
+        <object_raw name="Door B5 Status" constant_name="DOOR_B5_STATUS" />
+        <object_raw name="Cab Door A Side Status" constant_name="CAB_DOOR_A_SIDE_STATUS" />
+        <object_raw name="Cab Door B Side Status" constant_name="CAB_DOOR_B_SIDE_STATUS" />
+        <object_raw name="Cab Rear Door Status" constant_name="CAB_REAR_DOOR_STATUS" />
+        
+        <!--Login Screen objects-->
+        <object_raw name="Login Screen Password" constant_name="LOGIN_SCREEN_PASSWORD" />
+        <object_number name="Login Screen Message ID" constant_name="LOGIN_SCREEN_MESSAGE_ID"  default="0.0" delta="0.5" />
+        <object_number name="User Login Status" constant_name="USER_LOGIN_STATUS" default="0.0" delta="0.5" />
+        <object_number name="User Login Status Set" constant_name="USER_LOGIN_STATUS_SET" default="0.0" delta="0.5" />
+        
+        <!-- Bypass Screen -->
+        <object_number name="EB Bypass" constant_name="EB_BYPASS" default="0.0" delta="0.5" />
+        <object_number name="A Side Door Enable Bypass" constant_name="A_SIDE_DOOR_ENABLE_BYPASS" default="0.0" delta="0.5" />
+        <object_number name="B Side Door Enable Bypass" constant_name="B_SIDE_DOOR_ENABLE_BYPASS" default="0.0" delta="0.5" />
+        <object_number name="Zero Speed Bypass" constant_name="ZERO_SPEED_BYPASS" default="0.0" delta="0.5" />
+        <object_number name="Door Closed Bypass" constant_name="DOOR_CLOSED_BYPASS" default="0.0" delta="0.5" />
+        <object_number name="Brake Not Release Bypass" constant_name="BRAKE_NOT_RELEASE_BYPASS" default="0.0" delta="0.5" />
+        <object_number name="Cab Door Bypass" constant_name="CAB_DOOR_BYPASS" default="0.0" delta="0.5" />
+        <object_number name="Emergency Alarm Bypass" constant_name="EMERGENCY_ALARM_BYPASS" default="0.0" delta="0.5" />	
+
+        <object_raw name="Bypass Information Status" constant_name="BYPASS_INFORMATION_STATUS" />
+
+        <!-- Current Event  screen -->
+        <object_raw name="Current Event List" constant_name="CURRENT_EVENT_LIST"/>	
+        <object_number name="Current Event List Selected Event Index" constant_name="CURRENT_EVENT_LIST_SELECTED_EVENT_INDEX"    default="0.0" delta="0.5" />
+        <object_number name="Current Event Screen Current Page" 		constant_name="CURRENT_EVENT_SCREEN_CURRENT_PAGE"    		default="0.0" delta="0.5" />
+        <object_number name="Current Event Screen Total Page" 		constant_name="CURRENT_EVENT_SCREEN_TOTAL_PAGE"    		default="0.0" delta="0.5" />
+        
+        <!-- Interlock Check Screen -->
+        <object_number name="Passenger Emergency Alarm" constant_name="PASSENGER_EMERGENCY_ALARM" default="0.0" delta="0.5" />
+        <object_number name="Door Closed" constant_name="DOOR_CLOSED" default="0.0" delta="0.5" />
+        <object_number name="Brake Not Released" constant_name="BRAKE_NOT_RELEASED" default="0.0" delta="0.5" />
+        <object_number name="Parking Brake" constant_name="PARKING_BRAKE" default="0.0" delta="0.5" />
+        <object_number name="Delay Relay" constant_name="DELAY_RELAY" default="0.0" delta="0.5" />
+        <object_number name="Current Speed Limit" constant_name="CURRENT_SPEED_LIMIT" default="0.0" delta="0.5" />
+        <object_number name="Direction Handle" constant_name="DIRECTION_HANDLE" default="0.0" delta="0.5" />
+        <object_number name="Vigilance Delay Timer Relay" constant_name="VIGILENCE_DELAY_TIMER_RELAY" default="0.0" delta="0.5" />		  
+        <object_number name="Master Controller EB Position" constant_name="MASTER_CONTROLLER_EB_POSITION" default="0.0" delta="0.5" />
+        <object_number name="Train Safety Relay" constant_name="TRAIN_SAFETY_RELAY" default="0.0" delta="0.5" />
+        <object_number name="Mushroom Button" constant_name="MUSHROOM_BUTTON" default="0.0" delta="0.5" />
+        <object_number name="Main Reservoir Pipe Pressure" constant_name="MAIN_RESERVOIR_PIPE_PRESSURE" default="0.0" delta="0.5" />
+        <object_number name="Emergency Escape Door" constant_name="EMERGENCY_ESCAPE_DOOR" default="0.0" delta="0.5" />	
+        <object_number name="MRP Pressure Ok" constant_name="MRP_PRESSURE_OK" default="0.0" delta="0.5" />
+        <object_number name="No Passenger Emergency Alarm" constant_name="NO_PASSENGER_EMERGENCY_ALARM" default="0.0" delta="0.5" />
+
+
+         <object_number name="Train Mode" constant_name="TRAIN_MODE" default="0.0" delta="0.5" />
+
+
+        <!-- Battery Traction Screen -->
+	    <object_raw name="Battery Capacity Voltage"   constant_name="BATTERY_CAPACITY_VOLTAGE"/>
+        <object_raw name="Battery Capacity"   constant_name="BATTERY_CAPACITY"/>
+        <object_raw name="Current"            constant_name="CURRENT"/>
+        <object_raw name="Voltage"            constant_name="VOLTAGE"/>
+        <object_raw name="Temperature"        constant_name="TEMPERATURE"/>
+        
+        <!-- Fault Details screen -->
+        <object_raw name="Fault Details Screen Selected Event" constant_name="FAULT_DETAILS_SCREEN_SELECTED_EVENT"/>
+        <object_raw name="Pipe Pressure State" constant_name="PIPE_PRESSURE_STATE"/>
+        
+        <object_raw name="Priority Fault Event" constant_name="PRIORITY_FAULT_EVENT"/>
+        
+        <object_number name="Active Fault Grid Status"        constant_name="ACTIVE_FAULT_GRID_STATUS"       default="0.0" delta="0.5" />
+        <object_raw name="ACM Selection Status" constant_name="ACM_SELECTION_STATUS" /> 
+        <object_raw name="MCM Selection Status" constant_name="MCM_SELECTION_STATUS" /> 
+		
+		<!-- Network Screen -->
+		<object_number name="MVB Bus Failure" constant_name="MVB_BUS_FAILURE" default="0.0" delta="0.5" />
+        <object_number name="Test Current Speed" constant_name="TEST_CURRENT_SPEED" default="0.0" delta="0.5" />
+		
+		 <object_number name="Demo Speed Limit" constant_name="DEMO_SPEED_LIMIT" default="0.0" delta="0.5" />
+		 
+		 <object_raw name="Demo Time" constant_name="DEMO_TIME" /> 
+		 
+		 <object_raw name="Demo Date" constant_name="DEMO_DATE" /> 
+		 
+		 
+	</object_class>
+  </layer>
+
+  <!-- Parent-child relationship mapping -->
+   <relationship parent="Vehicle" child="HMI" />
+  <relationship parent="HMI" child="HMIInputs" />
+  <relationship parent="HMI" child="HMIOutputs" />
+  
+  <!-- Class ID declerations -->  
+  <class_ids>
+	<class_id class_name="HMI" class_id="3001"/>
+	
+	<class_id class_name="HMIInputs" class_id="3002"/>
+	<class_id class_name="HMIInputsValues" class_id="3003"/>
+	<class_id class_name="HMIInputsModes" class_id="3004"/>
+	<class_id class_name="HMIOutputs" class_id="3005"/>
+  </class_ids>
+</comms_config>
+

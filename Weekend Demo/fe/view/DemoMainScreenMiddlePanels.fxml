@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="800.0" stylesheets="@hmi-application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sydac.bjmmts.hmi.fe.gui.presenter.DemoMiddlePanelController">
+  <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="24.25" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="1.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="24.25" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="1.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="24.25" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="1.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="24.25" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane styleClass="demo-main-screen-grid" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="0.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="22.5" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="55.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="22.5" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="15.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="35.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="eventHistoryButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onEventHistoryButtonAction" styleClass="middle-panel-button" text="   Event     history" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="eventOverviewButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onEventOverviewButtonAction" styleClass="middle-panel-button" text="Event   overview" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="middle-panel-head-label" text="Diagnostics" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane styleClass="demo-main-screen-grid" GridPane.columnIndex="3" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="22.5" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="55.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="22.5" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="15.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="35.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="trainStatusButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onTrainStatusButtonAction" styleClass="middle-panel-button" text="     Train    status" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="interlocksButton" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onInterlocksButtonAction" styleClass="middle-panel-button" text="Interlocks" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="middle-panel-head-label" text="Instruments" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane styleClass="demo-main-screen-grid" GridPane.columnIndex="5" GridPane.rowIndex="1">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="25.5" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="55.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="25.5" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="15.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="20.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="35.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="brakeTestButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onBrakeTestButtonAction" styleClass="middle-panel-button" text="Brake test" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="tractionBreakTestButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onTractionBreakTestButtonAction" styleClass="middle-panel-button" text="Traction/ Break test" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="middle-panel-head-label" text="Test" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane prefHeight="252.0" prefWidth="200.0" styleClass="demo-main-screen-grid" GridPane.columnIndex="7" GridPane.rowIndex="1">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="22.5" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="55.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="22.5" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="15.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="20.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="20.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="settingButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onSettingButtonAction" styleClass="middle-panel-button" text="Setting" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="programVersionButton" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onProgramVersionButtonAction" styleClass="middle-panel-button" text="Program version" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="operationalDataButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onOperationalDataButtonAction" styleClass="middle-panel-button" text="Operational data" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="middle-panel-head-label" text="Maintenance" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

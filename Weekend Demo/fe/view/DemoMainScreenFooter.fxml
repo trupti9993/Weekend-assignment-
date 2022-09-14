@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="800.0" stylesheets="@hmi-application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sydac.bjmmts.hmi.fe.gui.presenter.DemoFooterPanelController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="14.19" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="14.19" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="14.19" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="14.19" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="14.19" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="29.05" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="doorButton" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDoorBtnAction" styleClass="demo-main-screen-footer-button" text="Door" />
+      <Button fx:id="airBrakesButton" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAirBrakesBtnAction" styleClass="demo-main-screen-footer-button" text="Brakes/Air" GridPane.columnIndex="1" />
+      <Button fx:id="propAuxBatteryButton" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPropAuxBatteryBtnAction" styleClass="demo-main-screen-footer-button" text="Prop/Auxl/  Battery" GridPane.columnIndex="2" />
+      <Button fx:id="acuButton" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAcuBtnAction" styleClass="demo-main-screen-footer-button" text="ACU" GridPane.columnIndex="3" />
+      <Button fx:id="pidsButton" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPidsBtnAction" styleClass="demo-main-screen-footer-button" text="PIDS" GridPane.columnIndex="4" />
+   </children>
+</GridPane>
